@@ -58,7 +58,11 @@ static const ece::Language ENGLISH = "en";
 
 ## File
 
-A file resource can be created has a valid JSON file with one depth level. It has to be named following a specific pattern _&lt;name&gt;\__&lt;language&gt;_\__&lt;country&gt;.json.
+A file resource can be created has a valid JSON file with one depth level. It has to be named following a specific pattern:
+
+```
+<name>_<language>_<country>.json
+```
 
 Each new entry of the resource, is composed of a key and a value. The key should be unique in all the file, and the same in each locale file. The value could be anything as a string format.
 
