@@ -18,7 +18,7 @@ Then, it is only needed to use the name of the resource file whished. The name o
 
 ### Resource
 
-Once, a resource has been loaded, throw the loader. A string resource can be accessed, obviously, using the mapping mechanism:
+Once, a resource has been loaded, throw the loader, a string resource can be accessed, obviously, using the mapping mechanism:
 
 ```cpp
 std::cout << resource["example"] << std::endl;
