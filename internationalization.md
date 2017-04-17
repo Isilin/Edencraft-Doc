@@ -4,9 +4,25 @@ The internationalization module provides some features to handle string resource
 
 ## Managing resources
 
+A container is available to load a resource file and to get the string resources.
+
 ### Loader
 
+Before loading a resource file, it is required to set up the root path:
+
+```cpp
+ece::ResourceLoader::setPath("../examples/Internationalization/");
+```
+
+Then, it is only needed to use the name of the resource file whished. The name of the file will be completed, according to the locale defined in the loader.
+
 ### Resource
+
+Once, a resource has been loaded, throw the loader. A string resource can be accessed, obviously, using the mapping mechanism:
+
+```cpp
+std::cout << resource["example"] << std::endl;
+```
 
 ## Locale
 
@@ -24,7 +40,7 @@ The list of countries available is the following:
 A new country can also be added:
 
 ```cpp
-static const Country USA = "US";
+static const ece::Country USA = "US";
 ```
 
 ### Language
@@ -37,12 +53,36 @@ The list of languages available is the following:
 A new language can also be added:
 
 ```cpp
-static const Language ENGLISH = "en";
+static const ece::Language ENGLISH = "en";
 ```
 
 ## File
 
+A file resource can be created has a valid JSON file with one depth level. It has to be named following a specific pattern _&lt;name&gt;\_&lt;language&gt;\_&lt;country&gt;.json _.
+
+Each new entry of the resource, is composed of a key and a value. The key should be unique in all the file, and the same in each locale. The value could be anything as a string format.
+
+###### test\_en\_US.json
+
+```js
+{
+	"helloworld": "Hello World!",
+	"example": "This line is a wonderful example of the module internationalization working ..."
+}
+```
+
+###### test\_fr\_FR.json
+
+```js
+{
+	"helloworld": "Bonjour tout le monde",
+	"example": "Cette ligne est un incroyable example de mon module internationalisation en fontionnement ..."
+}
+```
+
 ## Example
+
+###### Example.cpp
 
 ```cpp
 #include <iostream>
