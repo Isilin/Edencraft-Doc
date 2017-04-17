@@ -1,6 +1,6 @@
 # Internationalization
 
-The internationalization module provides some features to handle string resources, throw the right locale.
+The internationalization module provides some features to handle string resources, according to the right locale.
 
 ## Managing resources
 
@@ -58,7 +58,7 @@ static const ece::Language ENGLISH = "en";
 
 ## File
 
-A file resource can be created has a valid JSON file with one depth level. It has to be named following a specific pattern _&lt;name&gt;\_&lt;language&gt;\_&lt;country&gt;.json _.
+A file resource can be created has a valid JSON file with one depth level. It has to be named following a specific pattern _&lt;name&gt;\_&lt;language&gt;\_&lt;country&gt;.json \_.
 
 Each new entry of the resource, is composed of a key and a value. The key should be unique in all the file, and the same in each locale. The value could be anything as a string format.
 
@@ -66,8 +66,8 @@ Each new entry of the resource, is composed of a key and a value. The key should
 
 ```js
 {
-	"helloworld": "Hello World!",
-	"example": "This line is a wonderful example of the module internationalization working ..."
+    "helloworld": "Hello World!",
+    "example": "This line is a wonderful example of the module internationalization working ..."
 }
 ```
 
@@ -75,8 +75,8 @@ Each new entry of the resource, is composed of a key and a value. The key should
 
 ```js
 {
-	"helloworld": "Bonjour tout le monde",
-	"example": "Cette ligne est un incroyable example de mon module internationalisation en fontionnement ..."
+    "helloworld": "Bonjour tout le monde",
+    "example": "Cette ligne est un incroyable example de mon module internationalisation en fontionnement ..."
 }
 ```
 
