@@ -26,7 +26,7 @@ std::cout << resource["example"] << std::endl;
 
 ## Locale
 
-The locale is defined by a country and a language. A language alone, is not enough. Indeed, somes languages, as French are different, regarding to the country which use it.
+The locale is defined by a country and a language. A language alone, is not enough. Indeed, some languages, as French are different, regarding to the country which use it.
 
 By default, the locale used is **en\_US.**
 
@@ -58,7 +58,7 @@ static const ece::Language ENGLISH = "en";
 
 ## File
 
-A file resource can be created has a valid JSON file with one depth level. It has to be named following a specific pattern _&lt;name&gt;\_&lt;language&gt;\_&lt;country&gt;.json \_.
+A file resource can be created has a valid JSON file with one depth level. It has to be named following a specific pattern _&lt;name&gt;\__&lt;language&gt;\_&lt;country&gt;.json.
 
 Each new entry of the resource, is composed of a key and a value. The key should be unique in all the file, and the same in each locale. The value could be anything as a string format.
 
